@@ -63,6 +63,11 @@ a{
 /* Header */
 header{
     background-color: var(--background-grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     div{
         display: flex;
         justify-content: space-between;
@@ -398,6 +403,39 @@ footer{
         }
         #contactez-moi > div #formulaire form div:nth-child(1){
             grid-template-columns: 1fr;
+        }
+    }
+}
+/* 2eme Page (A propos) */
+#second{
+    header{
+        div >nav >ul >li:nth-child(1) >a{
+                color:var(--texte);
+        }
+        div >nav >ul >li:nth-child(2) >a{
+                color:var(--vert);
+        }
+    }
+}
+/* 3eme Page (Projets) */
+#third{
+    header{
+        div >nav >ul >li:nth-child(1) >a{
+                color:var(--texte);
+        }
+        div >nav >ul >li:nth-child(3) >a{
+                color:var(--vert);
+        }
+    }
+}
+/* 4eme Page (Contact) */
+#fourth{
+    header{
+        div >nav >ul >li:nth-child(1) >a{
+                color:var(--texte);
+        }
+        div >nav >ul >li:nth-child(4) >a{
+                color:var(--vert);
         }
     }
 }
