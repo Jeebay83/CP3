@@ -67,7 +67,10 @@ header{
         display: flex;
         justify-content: space-between;
         padding:15px;
-        text-align: center;
+        align-items: center;
+        >nav >ul >li:nth-child(1) >a{
+            color:var(--vert);
+        }
         a{
             color: var(--texte);
             font-family: var(--playfair);
@@ -87,6 +90,9 @@ header{
                 font-size: 16px;
                 font-weight: 500;
             }
+        }
+        .fa-bars{
+            display: none;
         }
     }
 }
@@ -255,6 +261,7 @@ main{
         }
         #formulaire{
             background-color: var(--background-grey);
+            border-radius: 12px;
             form{
                 display: flex;
                 flex-direction: column;
@@ -322,6 +329,9 @@ footer{
         color:var(--white);
         font-size: 24px;
         font-family: var(--playfair);
+        &:hover{
+            color:var(--vert);
+        }
     }
     ul{
         display: flex;
@@ -331,8 +341,63 @@ footer{
     p{
         padding-top: 10px;
     }
-    
+    i{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color:var(--vert);
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }
 /* Responsive tablette */
 
 /* Responsive mobile */
+@media screen and (max-width: 768px){
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+            .fa-bars{
+                display: inline;
+                cursor:pointer;
+            }
+        }
+    }
+    main{
+        #presentation{
+            .conteneur-img{
+                height: 640px;
+                .texte-overlay{
+                    flex-direction: column;
+                    top:0;
+                    gap:60px;
+                    >div{
+                        padding: 20px;
+                    }
+                    >div >p{
+                        width: 90%;
+                    }
+                }
+            }
+            h1{
+                font-size: 40px;
+            }
+        }
+        #a-propos{
+            >div{
+                grid-template-columns: 1fr;
+            }
+        }
+        #mes-projets-recents{
+            >div{
+                #div-articles{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+        #contactez-moi > div #formulaire form div:nth-child(1){
+            grid-template-columns: 1fr;
+        }
+    }
+}
