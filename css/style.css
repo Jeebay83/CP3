@@ -38,6 +38,11 @@ h3{
     font-size: 24px;
     font-weight: 600;
 }
+h4{
+    font-size: 18px;
+    font-weight: 400;
+    color:var(--vert);
+}
 h1, h2, h3{
     font-family: var(--playfair);
 }
@@ -222,6 +227,7 @@ main{
                 padding: 40px 0;
                 article{
                     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+                    border-radius: 20px;
                 }
                 img{
                     width: 100%;
@@ -416,6 +422,66 @@ footer{
                 color:var(--vert);
         }
     }
+    main{
+        #a-propos{
+            padding: 80px 60px 60px 60px;
+        }
+        #en-plus{
+            padding: 0 60px 60px 60px;
+            h2{
+                text-align: center;
+                padding-bottom: 60px;
+            }
+            >div{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap:30px;
+            }
+            #profil{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+            }
+            #div-cards{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                >div{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap:40px;
+                }
+            }
+            .cards{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 12px;
+            }
+            .fa-computer, .fa-repeat{
+                color:blue;
+            }
+            .fa-brain{
+                color:pink;
+            }
+            .fa-bolt{
+                color: orange;
+            }
+            .fa-handshake{
+                color: #ffde21
+            }
+            .fa-shuttle-space{
+                color: red;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #second main #en-plus >div{
+        grid-template-columns: 1fr;
+    }
 }
 /* 3eme Page (Projets) */
 #third{
@@ -427,6 +493,11 @@ footer{
                 color:var(--vert);
         }
     }
+    main{
+        #mes-projets-recents{
+            padding: 80px 0 60px 0;
+        }
+    }
 }
 /* 4eme Page (Contact) */
 #fourth{
@@ -436,6 +507,11 @@ footer{
         }
         div >nav >ul >li:nth-child(4) >a{
                 color:var(--vert);
+        }
+    }
+    main{
+        #contactez-moi{
+            padding-top: 40px;
         }
     }
 }
