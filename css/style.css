@@ -427,7 +427,7 @@ footer{
             padding: 80px 60px 60px 60px;
         }
         #en-plus{
-            padding: 0 60px 60px 60px;
+            padding: 0 20px 60px 20px;
             h2{
                 text-align: center;
                 padding-bottom: 60px;
@@ -459,6 +459,7 @@ footer{
                 gap: 20px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 border-radius: 12px;
+                padding:10px 0;
             }
             .fa-computer, .fa-repeat{
                 color:blue;
