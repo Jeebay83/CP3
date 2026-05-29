@@ -221,6 +221,7 @@ main{
                     color:var(--white);
                     background-color: var(--background);
                     padding: 15px 20px;
+                    border-radius: 12px;
                     &:hover{
                         background-color: var(--vert);
                         color: var(--white);
