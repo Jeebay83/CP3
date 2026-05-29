@@ -223,7 +223,7 @@ main{
             #div-articles{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap:20px;
+                gap:40px;
                 padding: 40px 0;
                 article{
                     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
