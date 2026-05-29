@@ -33,17 +33,19 @@ h1{
 h2{
     font-size: 36px;
     font-weight: 700;
+    color: #C96B3B;
 }
 h3{
     font-size: 24px;
     font-weight: 600;
+    color: #5E3B2C;
 }
 h4{
     font-size: 18px;
     font-weight: 400;
-    color:var(--vert);
+    color: #7A675C;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: var(--playfair);
 }
 img{
@@ -103,11 +105,17 @@ header{
         }
         .fa-bars{
             display: none;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                color:var(--vert);
+            }
         }
     }
 }
 /* Main */
 main{
+    background: linear-gradient(to bottom, white 0%, #dff7dc 70%, white 100%);
     #presentation{
         .conteneur-img{
             position: relative;
@@ -204,7 +212,6 @@ main{
         }
     }
     #mes-projets-recents{
-        background-color: var(--background-grey);
         padding:60px 0;
         >div{
             #div-a{
@@ -228,6 +235,7 @@ main{
                 article{
                     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
                     border-radius: 20px;
+                    background-color: var(--white);
                 }
                 img{
                     width: 100%;
@@ -424,7 +432,17 @@ footer{
     }
     main{
         #a-propos{
-            padding: 80px 60px 60px 60px;
+            padding: 80px 20px 60px 20px;
+            >div:nth-child(1){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:10px;
+                padding-top: 20px;
+                img{
+                    width: 10%;
+                }
+            }
         }
         #en-plus{
             padding: 0 20px 60px 20px;
@@ -461,8 +479,11 @@ footer{
                 border-radius: 12px;
                 padding:10px 0;
             }
-            .fa-computer, .fa-repeat{
+            .fa-computer{
                 color:blue;
+            }
+            .fa-repeat{
+                color:#5DADE2;
             }
             .fa-brain{
                 color:pink;
@@ -482,6 +503,9 @@ footer{
 @media screen and (max-width: 768px){
     #second main #en-plus >div{
         grid-template-columns: 1fr;
+    }
+    #second main #a-propos >div:nth-child(1) >img{
+        width: 30%;
     }
 }
 /* 3eme Page (Projets) */
