@@ -421,7 +421,7 @@ footer{
         }
     }
 }
-/* 2eme Page (A propos) */
+/* 2eme Page (about) */
 #second{
     header{
         div >nav >ul >li:nth-child(1) >a{
@@ -509,7 +509,7 @@ footer{
         width: 30%;
     }
 }
-/* 3eme Page (Projets) */
+/* 3eme Page (projects) */
 #third{
     header{
         div >nav >ul >li:nth-child(1) >a{
@@ -525,7 +525,7 @@ footer{
         }
     }
 }
-/* 4eme Page (Contact) */
+/* 4eme Page (contact) */
 #fourth{
     header{
         div >nav >ul >li:nth-child(1) >a{
